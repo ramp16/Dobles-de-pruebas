@@ -1,0 +1,10 @@
+version: '2'
+services:
+  php-apache:
+    container_name: server-php-apache
+    build:
+      context: ./
+    volumes:
+    - ./app:/var/www/html
+    ports:
+    - 81:80
